@@ -1,16 +1,38 @@
-# React + Vite
+# CRUD Table App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React-приложение с интерактивной таблицей: добавление, редактирование и удаление записей с поиском и сортировкой.
 
-Currently, two official plugins are available:
+## Стек
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** + **TypeScript**
+- **Ant Design 6** — UI-компоненты, таблица, модальное окно, формы
+- **MobX** — управление состоянием
+- **Day.js** — работа с датами
+- **Vite** — сборка
 
-## React Compiler
+## Функциональность
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Таблица с колонками: Имя, Дата, Числовое значение, Действия
+- Добавление записей через модальное окно с валидацией полей
+- Редактирование строки — модальное окно с предзаполненными данными
+- Удаление строки
+- Сортировка по всем колонкам (строки, даты, числа)
+- Поиск по всем ячейкам таблицы
 
-## Expanding the ESLint configuration
+## Запуск
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Установить зависимости
+npm install
+
+# Режим разработки
+npm run dev
+
+# Сборка
+npm run build
+
+# Превью сборки
+npm run preview
+```
+
+Приложение будет доступно по адресу `http://localhost:5173`
